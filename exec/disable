@@ -1,0 +1,9 @@
+#!/bin/sh
+
+help() {
+	echo "disable      Jupyter Autostart ausschalten"
+}
+
+run() {
+	crontab -r
+}

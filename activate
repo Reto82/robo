@@ -1,15 +1,10 @@
 #!/bin/dash
 
-
 export ROBO_BASE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 export PATH="$ROBO_BASE/bin:$PATH"
 . "$ROBO_BASE/config"
 if [ -e "$ZADAN_BASE/userconfig" ]; then
 	. "$ROBO_BASE/userconfig"
 fi
-export PS1="(ROBO) $PS1"
-if [ "$SHELL" = "/bin/bash" ]; then
-	exec "$SHELL" --norc "$@"
-else
-	exec "$SHELL" "$@"
-fi
+export debian_chroot="ROBO"
+exec "$SHELL" "$@"

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+help() {
+	echo "enable       Starte jupyter automatisch"
+}
+
+run() {
+	(cd "$ROBO_BASE/ugv_rpi" && sudo bash ./autorun.sh)
+}
