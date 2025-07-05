@@ -5,5 +5,5 @@ help() {
 }
 
 run() {
-	(cd "$ROBO_BASE/ugv_rpi" && sudo bash ./autorun.sh)
+	(cd "$ROBO_BASE/ugv_rpi" && bash ./autorun.sh)
 }

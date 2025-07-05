@@ -6,5 +6,5 @@ help() {
 
 run() {
 	git submodule update --init --recursive
-	(cd "$ROBO_BASE/ugv_rpi" && bash ./setup.sh)
+	(cd "$ROBO_BASE/ugv_rpi" && sudo bash ./setup.sh)
 }
