@@ -1,0 +1,12 @@
+#!/bin/dash
+
+if [ -z "$1" ]; then
+	for script in $ROBO_EXEC/*; do
+		. $script
+		help
+	done
+else
+	. "$ROBO_EXEC/$1"
+	shift
+	run "$@"
+fi

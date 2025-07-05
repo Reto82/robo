@@ -1,0 +1,9 @@
+#!/bin/sh
+
+help() {
+	echo "install      Installiere Software für Robo"
+}
+
+run() {
+:
+}
